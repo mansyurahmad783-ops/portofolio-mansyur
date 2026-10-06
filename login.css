@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top, #300000, #080808 55%);
+}
+
+
+/* CONTAINER */
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* LOGIN BOX */
+
+.login-box {
+    max-width: 420px;
+    margin: auto;
+
+    padding: 40px;
+
+    background: rgba(20, 20, 20, 0.95);
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.6);
+
+    color: white;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff3b3b;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* TITLE */
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.subtitle {
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* INPUT */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid #333;
+
+    outline: none;
+
+    background: #0d0d0d;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #ff3b3b;
+}
+
+
+/* REMEMBER */
+
+.remember {
+    margin-bottom: 20px;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ff3b3b;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d92828;
+
+    transform: translateY(-2px);
+}
+
+
+/* MESSAGE */
+
+#message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* BACK */
+
+.back {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+.back a {
+    color: #ff3b3b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}

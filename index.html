@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Portfolio | Ahmad Mansyur</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     CEK LOGIN
+===================================== -->
+
+<script>
+
+    if (
+        localStorage.getItem("isLoggedIn")
+        !== "true"
+    ) {
+
+        window.location.href =
+            "login.html";
+
+    }
+
+</script>
+
+
+
+<!-- =====================================
+     NAVBAR
+===================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <span>AM</span>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    Tentang
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Skill
+                </a>
+            </li>
+
+            <li>
+                <a href="#keahlian">
+                    Project
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Kontak
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#"
+                    onclick="logout()"
+                    class="logout"
+                >
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- MENU MOBILE -->
+
+        <div class="menu-toggle">
+
+            ☰
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HOME
+===================================== -->
+
+<section
+    id="home"
+    class="hero"
+>
+
+
+    <!-- TEXT -->
+
+    <div class="hero-text">
+
+
+        <p class="small-text">
+
+            Halo, saya
+
+        </p>
+
+
+        <h1>
+
+            Ahmad
+            <span>Mansyur</span>
+
+        </h1>
+
+
+        <h2>
+
+            Mahasiswa Teknik Komputer
+
+        </h2>
+
+
+        <p>
+
+            Saya adalah mahasiswa yang tertarik
+            dengan dunia teknologi, pemrograman,
+            jaringan komputer, dan pengembangan
+            website.
+
+        </p>
+
+
+        <!-- BUTTON -->
+
+        <div class="hero-buttons">
+
+            <a
+                href="#projects"
+                class="btn"
+            >
+
+                Lihat Project
+
+            </a>
+
+
+            <a
+                href="#contact"
+                class="btn-outline"
+            >
+
+                Hubungi Saya
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- FOTO -->
+
+    <div class="hero-image">
+
+        <div class="profile-circle">
+
+            <img
+                src="gambar.jpeg"
+                alt="Foto Ahmad Mansyur"
+            >
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     ABOUT
+===================================== -->
+
+<section
+    id="about"
+    class="section"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            TENTANG SAYA
+        </p>
+
+        <h2>
+            About Me
+        </h2>
+
+    </div>
+
+
+
+    <div class="about-content">
+
+
+        <!-- ABOUT -->
+
+        <div class="about-card">
+
+            <h3>
+                Siapa Saya?
+            </h3>
+
+
+            <p>
+
+                Halo! Nama saya Ahmad Mansyur.
+                Saya merupakan mahasiswa Teknik
+                Komputer yang memiliki ketertarikan
+                terhadap teknologi dan dunia komputer.
+
+            </p>
+
+
+            <p>
+
+                Saya sedang mempelajari berbagai
+                hal seperti pemrograman, pengembangan
+                website, jaringan komputer, Linux,
+                dan teknologi informasi.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- INFO -->
+
+        <div class="about-info">
+
+
+            <div class="info-box">
+
+                <strong>
+                    Nama
+                </strong>
+
+                <span>
+                    Ahmad Mansyur
+                </span>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <strong>
+                    Program Studi
+                </strong>
+
+                <span>
+                    Teknik Komputer
+                </span>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <strong>
+                    Hobi
+                </strong>
+
+                <span>
+                    Bermain Game
+                </span>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <strong>
+                    Fokus
+                </strong>
+
+                <span>
+                    Teknologi & Pemrograman
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SKILLS
+===================================== -->
+
+<section
+    id="skills"
+    class="section skills-section"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            KEMAMPUAN
+        </p>
+
+        <h2>
+            My Skills
+        </h2>
+
+    </div>
+
+
+
+    <div class="skills-container">
+
+
+        <!-- HTML -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                HTML
+            </div>
+
+            <h3>
+                HTML
+            </h3>
+
+            <p>
+                Membuat struktur halaman website
+                menggunakan HTML.
+            </p>
+
+        </div>
+
+
+
+        <!-- CSS -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                CSS
+            </div>
+
+            <h3>
+                CSS
+            </h3>
+
+            <p>
+                Membuat tampilan website menjadi
+                menarik dan responsive.
+            </p>
+
+        </div>
+
+
+
+        <!-- JAVASCRIPT -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                JS
+            </div>
+
+            <h3>
+                JavaScript
+            </h3>
+
+            <p>
+                Membuat website menjadi lebih
+                interaktif.
+            </p>
+
+        </div>
+
+
+
+        <!-- C++ -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                C++
+            </div>
+
+            <h3>
+                C++
+            </h3>
+
+            <p>
+                Membuat program menggunakan
+                bahasa C++.
+            </p>
+
+        </div>
+
+
+
+        <!-- NETWORK -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                NET
+            </div>
+
+            <h3>
+                Networking
+            </h3>
+
+            <p>
+                Mempelajari jaringan komputer,
+                Linux, dan MikroTik.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     KEAHLIAN
+===================================== -->
+
+<section id="keahlian" class="skills">
+
+    <div class="container">
+
+        <h2 class="section-title">Keahlian Saya</h2>
+
+        <p class="section-subtitle">
+            Beberapa teknologi dan bidang yang sedang saya pelajari.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>
+                    Membuat struktur website menggunakan HTML.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>
+                    Membuat tampilan website agar lebih menarik dan responsif.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>
+                    Membuat website menjadi lebih interaktif.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>C++</h3>
+                <p>
+                    Mempelajari dasar pemrograman menggunakan bahasa C++.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Networking</h3>
+                <p>
+                    Mempelajari jaringan komputer, MikroTik dan Linux.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>
+                    Bermain game sebagai salah satu hobi saya.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTACT
+===================================== -->
+
+<section
+    id="contact"
+    class="section contact-section"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            HUBUNGI SAYA
+        </p>
+
+        <h2>
+            Contact Me
+        </h2>
+
+    </div>
+
+
+
+    <div class="contact-container">
+
+
+        <!-- CONTACT INFO -->
+
+        <div class="contact-text">
+
+
+            <h3>
+                Mari Terhubung!
+            </h3>
+
+
+            <p>
+
+                Jika ingin menghubungi saya
+                atau berdiskusi mengenai project,
+                silakan gunakan informasi kontak
+                di bawah ini.
+
+            </p>
+
+
+            <div class="contact-info">
+
+
+                <p>
+
+                    📧 Email:
+
+                    <span>
+                        mansyurahmad783@gmail.com
+                    </span>
+
+                </p>
+
+
+                <p>
+
+                    📱 WhatsApp:
+
+                    <span>
+                        087762657642
+                    </span>
+
+                </p>
+
+
+                <p>
+
+                    📍 Lokasi:
+
+                    <span>
+                        Jember, Jawa Timur
+                    </span>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form id="contactForm">
+
+
+            <input
+                type="text"
+                placeholder="Nama"
+                required
+            >
+
+
+            <input
+                type="email"
+                placeholder="Email"
+                required
+            >
+
+
+            <textarea
+                placeholder="Pesan"
+                rows="6"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+
+                Kirim Pesan
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 Ahmad Mansyur.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
