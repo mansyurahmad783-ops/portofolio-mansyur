@@ -1,97 +1,74 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Login | Ahmad Mansyur</title>
-
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <title>Login | Ahmad Mansyur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
+  <div class="background-grid"></div>
+  <div class="glow glow-left"></div>
+  <div class="glow glow-right"></div>
+  <main class="login-layout">
+    <section class="welcome-panel">
+      <a class="brand" href="login.html"><span class="brand-mark">AM</span><span>ahmad<span class="dot">.</span></span></a>
+      <div class="welcome-copy">
+        <p class="eyebrow"><span class="live-dot"></span> PERSONAL PORTFOLIO</p>
+        <h1>Ide besar<br>dimulai dari<br><span>langkah kecil.</span></h1>
+        <p class="welcome-description">Selamat datang kembali. Masuk untuk menjelajahi perjalanan, kemampuan, dan karya saya di dunia teknologi.</p>
+        <div class="welcome-points">
+          <div><span class="point-icon">⌘</span><span><b>Computer Engineering</b><small>Belajar, mencoba, berkembang.</small></span></div>
+          <div><span class="point-icon">✦</span><span><b>Build with curiosity</b><small>Setiap project adalah pengalaman baru.</small></span></div>
+        </div>
+      </div>
+      <p class="welcome-footer">© <span id="year"></span> Ahmad Mansyur · Dibuat dengan semangat belajar.</p>
+    </section>
 
-    <div class="login-container">
-
-        <div class="login-box">
-
-            <div class="logo">
-                AM
-            </div>
-
-            <h1>Welcome Back</h1>
-
-            <p class="subtitle">
-                Silakan login untuk masuk ke portfolio
-            </p>
-
-
-            <form id="loginForm">
-
-                <div class="input-group">
-
-                    <label>Username</label>
-
-                    <input
-                        type="text"
-                        id="username"
-                        placeholder="Masukkan username"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>Password</label>
-
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Masukkan password"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="remember">
-
-                    <label>
-                        <input type="checkbox" id="remember">
-                        Ingat saya
-                    </label>
-
-                </div>
-
-
-                <button type="submit">
-                    Login
-                </button>
-
-
-                <p id="message"></p>
-
-            </form>
-
-
-            <div class="back">
-
-                <a href="index.html">
-                    ← Kembali ke Portfolio
-                </a>
-
-            </div>
-
+    <section class="form-panel">
+      <div class="login-card">
+        <div class="mobile-brand"><span class="brand-mark">AM</span><span>ahmad<span class="dot">.</span></span></div>
+        <div class="form-heading">
+          <div class="form-icon">↗</div>
+          <p class="eyebrow">SENANG MELIHATMU LAGI</p>
+          <h2>Selamat datang<span>.</span></h2>
+          <p>Masukkan akun untuk melanjutkan ke portofolio.</p>
         </div>
 
-    </div>
+        <form id="loginForm" novalidate>
+          <label for="username">Username atau email</label>
+          <div class="input-wrap">
+            <span class="input-icon">♙</span>
+            <input id="username" name="username" type="text" placeholder="Masukkan username" autocomplete="username" required>
+          </div>
 
+          <div class="password-label">
+            <label for="password">Password</label>
+            <button class="forgot-link" type="button" id="forgotBtn">Lupa password?</button>
+          </div>
+          <div class="input-wrap">
+            <span class="input-icon">♧</span>
+            <input id="password" name="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+            <button class="show-password" type="button" id="togglePassword" aria-label="Tampilkan password">◉</button>
+          </div>
+          <div class="form-options">
+            <label class="remember"><input type="checkbox" id="remember"> <span>Ingat saya di perangkat ini</span></label>
+          </div>
 
-    <script src="login.js"></script>
+          <p class="message" id="message" role="status" aria-live="polite"></p>
+          <button class="submit-btn" type="submit"><span>Masuk ke Portfolio</span><b>→</b></button>
+        </form>
 
+        <div class="divider"><span>PORTFOLIO PERSONAL</span></div>
+        <p class="security-note"><span>⌑</span> Halaman demo untuk portofolio pribadi.</p>
+        <p class="demo-note">Belum punya akun? <button type="button" id="demoBtn">Gunakan mode demo</button></p>
+      </div>
+    </section>
+  </main>
+  <script src="login.js"></script>
 </body>
-
 </html>
