@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       message.textContent = "Login berhasil. Mengalihkan ke portofolio...";
       message.className = "message success";
-      window.setTimeout(() => { window.location.href = "index.html"; }, 550);
-    } else {
+      localStorage.setItem("isLoggedIn", "true");
+      window.location.href = "index.html";
       message.textContent = "Username atau password salah. Periksa kembali data login kamu.";
       message.className = "message";
     }
