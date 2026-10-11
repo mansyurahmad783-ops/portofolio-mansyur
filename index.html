@@ -1,134 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1b">
-  <script>
-    if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.replace("login.html");
-    }
-</script>
-  <title>Ahmad Mansyur | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengalihkan ke Login</title>
+
+    <meta http-equiv="refresh" content="0;url=login.html">
 </head>
 <body>
-  <div class="progress-bar" id="progressBar"></div>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="Navigasi utama">
-      <a class="brand" href="#home" aria-label="Ahmad Mansyur - Beranda"><span class="brand-mark">AM</span><span>Mansyuerrrrr<span class="brand-dot">.</span></span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a class="nav-link active" href="#home">Beranda</a></li>
-        <li><a class="nav-link" href="#about">Tentang</a></li>
-        <li><a class="nav-link" href="#skills">Keahlian</a></li>
-        <li><a class="nav-link" href="#projects">Project</a></li>
-        <li><a class="nav-link" href="#journey">Perjalanan</a></li>
-        <li><a class="nav-link" href="#contact">Kontak</a></li>
-        <li><button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">☼</button></li>
-        <li><button class="nav-logout" id="logoutBtn">Logout ↗</button></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section-shell" id="home">
-      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="availability"><span class="pulse"></span> Mahasiswa • Sedang terus belajar</div>
-          <p class="eyebrow">HALO, SELAMAT DATANG DI PORTOFOLIO SAYA</p>
-          <h1>Membangun sesuatu<br>yang <span class="gradient-text">bermakna.</span></h1>
-          <p class="hero-description">Saya <strong>Ahmad Mansyur</strong>, mahasiswa Teknik Komputer yang tertarik pada pengembangan website, pemrograman, dan jaringan komputer.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Jelajahi Project <span>↘</span></a>
-            <a class="btn btn-ghost" href="#contact">Hubungi Saya <span>↗</span></a>
-          </div>
-          <div class="hero-meta"><span><i class="meta-icon">⌘</i> Computer Engineering</span><span><i class="meta-icon">⌖</i> Jember, Indonesia</span></div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-          <div class="profile-card">
-            <div class="profile-top"><span class="window-dots"><i></i><i></i><i></i></span><span>PROFILE.exe</span><span class="card-status">● ONLINE</span></div>
-            <div class="avatar-wrap"><img src="gambar.jpeg" alt="Foto Ahmad Mansyur" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="avatar-fallback">AM</div></div>
-            <p class="profile-name">Ahmad Mansyur</p><p class="profile-role">Computer Engineering Student</p>
-            <div class="profile-tags"><span>Web Dev</span><span>Networking</span><span>C++</span></div>
-            <div class="profile-bottom"><span>STATUS</span><strong><i></i> Always learning</strong></div>
-          </div>
-          <div class="floating-chip chip-code"><span>〈/〉</span> Clean Code</div>
-          <div class="floating-chip chip-network"><span>⌁</span> Network Lab</div>
-        </div>
-      </div>
-      <a href="#about" class="scroll-cue"><span></span> SCROLL UNTUK MENJELAJAH</a>
-    </section>
-
-    <section class="section section-about" id="about">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">KENALI SAYA</p><h2>Lebih dari sekadar <span class="gradient-text">kode.</span></h2><p>Saya suka mempelajari cara teknologi bekerja dan mengubah ide menjadi sesuatu yang bisa digunakan.</p></div>
-        <div class="about-grid">
-          <article class="about-panel glass-panel reveal"><span class="panel-number">01 / ABOUT</span><h3>Halo! Saya Mansyuerrrrr.</h3><p>Saya mahasiswa Teknik Komputer yang sedang memperluas kemampuan di bidang teknologi informasi. Saat ini saya belajar membangun website, membuat program, serta memahami konfigurasi jaringan dan sistem Linux.</p><p>Bagi saya, setiap error adalah kesempatan untuk memahami sesuatu dengan lebih baik. Saya ingin terus berkembang lewat latihan, eksperimen, dan project nyata.</p><a href="#journey" class="text-link">Lihat perjalanan saya <span>→</span></a></article>
-          <div class="facts-grid reveal">
-            <article class="fact-card"><span class="fact-icon">⌘</span><p>Program Studi</p><h3>Teknik Komputer</h3><small>Teknologi Informasi</small></article>
-            <article class="fact-card"><span class="fact-icon">⌖</span><p>Domisili</p><h3>Jember</h3><small>Jawa Timur, Indonesia</small></article>
-            <article class="fact-card"><span class="fact-icon">🎮</span><p>Di waktu luang</p><h3>Bermain Game</h3><small>Recharge & fun</small></article>
-            <article class="fact-card"><span class="fact-icon">✦</span><p>Prinsip saya</p><h3>Terus Bertumbuh</h3><small>Belajar sedikit setiap hari</small></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-skills" id="skills">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">YANG SEDANG SAYA PELAJARI</p><h2>Tools & <span class="gradient-text">keahlian.</span></h2><p>Kemampuan yang terus saya latih melalui tugas, praktikum, dan eksperimen pribadi.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol orange">5</span><span class="skill-level">DASAR</span></div><h3>HTML</h3><p>Menyusun struktur halaman website yang rapi dan mudah dipahami.</p><div class="skill-track"><span style="width:75%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol blue">✳</span><span class="skill-level">DASAR</span></div><h3>CSS</h3><p>Mengatur layout, warna, animasi, dan tampilan responsif.</p><div class="skill-track"><span style="width:68%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol yellow">JS</span><span class="skill-level">DASAR</span></div><h3>JavaScript</h3><p>Membuat interaksi dan fitur dinamis pada website.</p><div class="skill-track"><span style="width:52%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol violet">C+</span><span class="skill-level">DASAR</span></div><h3>C++</h3><p>Melatih logika, algoritma, fungsi, dan pemrograman berorientasi objek.</p><div class="skill-track"><span style="width:60%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol green">⌁</span><span class="skill-level">BELAJAR</span></div><h3>Networking</h3><p>Mempelajari IP, subnetting, MikroTik, dan troubleshooting jaringan.</p><div class="skill-track"><span style="width:55%"></span></div></article>
-          <article class="skill-card reveal"><div class="skill-head"><span class="skill-symbol pink">$_</span><span class="skill-level">BELAJAR</span></div><h3>Linux</h3><p>Berlatih menggunakan terminal dan konfigurasi layanan di Debian.</p><div class="skill-track"><span style="width:48%"></span></div></article>
-        </div>
-        <p class="skills-note">* Indikator di atas merupakan gambaran belajar pribadi, bukan sertifikasi atau penilaian resmi.</p>
-      </div>
-    </section>
-
-    <section class="section section-projects" id="projects">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">HASIL LATIHAN</p><h2>Project & <span class="gradient-text">eksperimen.</span></h2><p>Contoh bidang project yang ingin saya bangun dan kembangkan. Ganti detailnya sesuai hasil project milikmu.</p></div>
-        <div class="project-grid">
-          <article class="project-card project-featured reveal"><div class="project-art art-web"><div class="mock-browser"><div class="mock-bar"><i></i><i></i><i></i><span>portfolio.local</span></div><div class="mock-content"><div class="mock-line wide"></div><div class="mock-line"></div><div class="mock-pill"></div><div class="mock-cards"><i></i><i></i><i></i></div></div></div><span class="art-label">01 — WEB</span></div><div class="project-body"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>Personal Portfolio</h3><p>Website untuk memperkenalkan diri, menampilkan kemampuan, dan menjadi tempat mengumpulkan karya.</p><a class="text-link" href="#contact">Diskusikan project <span>→</span></a></div></article>
-          <article class="project-card reveal"><div class="project-art art-code"><div class="code-window"><div><b>int</b> main() {</div><div class="indent"><b>cout</b> &lt;&lt; <em>"Hello, world!"</em>;</div><div> <b>return</b> <strong>0</strong>;</div><div>}</div></div><span class="art-label">02 — CODE</span></div><div class="project-body"><div class="project-tags"><span>C++</span><span>Logic</span></div><h3>Latihan Pemrograman</h3><p>Kumpulan program latihan untuk memperkuat logika dan pemahaman dasar pemrograman.</p><a class="text-link" href="#contact">Diskusikan project <span>→</span></a></div></article>
-          <article class="project-card reveal"><div class="project-art art-network"><div class="network-node node-a">PC</div><div class="network-node node-b">SW</div><div class="network-node node-c">SRV</div><div class="network-node node-d">PC</div><div class="network-lines"></div><span class="art-label">03 — NETWORK</span></div><div class="project-body"><div class="project-tags"><span>Debian</span><span>Networking</span></div><h3>Praktikum Jaringan</h3><p>Catatan konfigurasi jaringan dan layanan server dari proses belajar di lingkungan lab.</p><a class="text-link" href="#contact">Diskusikan project <span>→</span></a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-journey" id="journey">
-      <div class="container journey-grid">
-        <div class="section-heading left-heading reveal"><p class="eyebrow">PROSES SAYA</p><h2>Perjalanan <span class="gradient-text">belajar.</span></h2><p>Semua dimulai dari rasa ingin tahu. Berikut fokus yang sedang saya bangun.</p><a class="btn btn-ghost" href="#contact">Ngobrol bareng <span>↗</span></a></div>
-        <div class="timeline reveal">
-          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">FOKUS 01</p><h3>Fondasi pemrograman</h3><p>Memahami algoritma, struktur data dasar, dan membiasakan diri menulis kode yang mudah dibaca.</p></article>
-          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">FOKUS 02</p><h3>Pengembangan website</h3><p>Menggabungkan HTML, CSS, dan JavaScript untuk membuat website yang nyaman digunakan.</p></article>
-          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">FOKUS 03</p><h3>Jaringan & Linux</h3><p>Berlatih konfigurasi IP, layanan server, serta mencari penyebab masalah dengan langkah terstruktur.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-contact" id="contact">
-      <div class="container">
-        <div class="contact-panel reveal">
-          <div class="contact-copy"><p class="eyebrow">PUNYA IDE ATAU MAU BERDISKUSI?</p><h2>Mari buat sesuatu<br><span class="gradient-text">bersama.</span></h2><p>Terbuka untuk diskusi, belajar bareng, atau bertukar ide seputar teknologi.</p><div class="contact-links"><a href="mailto:mansyurahmad783@gmail.com">✉ <span>mansyurahmad783@gmail.com</span></a><a href="https://wa.me/6287762657642" target="_blank" rel="noopener noreferrer">↗ <span>Hubungi melalui WhatsApp</span></a></div></div>
-          <form id="contactForm" class="contact-form"><label for="contactName">Nama</label><input id="contactName" name="name" type="text" placeholder="Nama kamu" required><label for="contactEmail">Email</label><input id="contactEmail" name="email" type="email" placeholder="nama@email.com" required><label for="contactMessage">Pesan</label><textarea id="contactMessage" name="message" rows="4" placeholder="Ceritakan apa yang ingin didiskusikan..." required></textarea><button class="btn btn-primary submit-btn" type="submit">Kirim lewat Email <span>↗</span></button><p class="form-note">Tombol akan membuka aplikasi email di perangkatmu.</p></form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">AM</span><span>ahmad<span class="brand-dot">.</span></span></a><p>Dibuat dengan rasa ingin tahu dan secangkir semangat.</p><a href="#home" class="back-top">Kembali ke atas ↑</a><small>© <span id="year"></span> Ahmad Mansyur</small></div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+    <p>Mengarahkan ke halaman login...</p>
+    <a href="login.html">Klik di sini jika halaman tidak terbuka.</a>
 </body>
 </html>
