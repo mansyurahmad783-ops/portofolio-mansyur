@@ -189,7 +189,7 @@
                 message.style.color = "#4ade80";
                 message.textContent = "Login berhasil! Membuka portofolio...";
 
-                window.location.href = "portfolio.html";
+                window.location.href = "porotofolio.html";
             } else {
                 message.style.color = "#f87171";
                 message.textContent =
