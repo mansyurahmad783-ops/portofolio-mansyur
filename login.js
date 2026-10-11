@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     togglePassword.textContent = show ? "◎" : "◉";
   });
 
-  // Mode demo: bisa masuk tanpa backend dengan mengisi kedua kolom.
+  // Tombol ini mengisi akun akses umum agar pengunjung mudah masuk.
   document.getElementById("demoBtn").addEventListener("click", () => {
-    usernameInput.value = "mansyur";
-    passwordInput.value = "08082007";
-    message.textContent = "Mode demo terisi. Klik tombol Masuk untuk melanjutkan.";
+    usernameInput.value = "user";
+    passwordInput.value = "user";
+    message.textContent = "Akun akses umum sudah terisi. Klik Masuk untuk melanjutkan.";
     message.className = "message success";
     passwordInput.focus();
   });
@@ -38,23 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Login demo front-end: bukan autentikasi aman untuk data penting.
-    // Kamu bisa mengubah username/password demo sesuai kebutuhan.
-    const isDemoLogin = username === "demo" && password === "demo123";
-    const isSimpleLocalLogin = username.toLowerCase() === "ahmad" && password === "mansyur123";
+    // CATATAN: kredensial front-end dapat dilihat di kode sumber website.
+    // Ini hanya cocok untuk demo/tugas, bukan perlindungan data penting.
+    const isPublicLogin = username === "user" && password === "user";
+    const isOwnerLogin = username === "mansyur" && password === "08082007";
 
-    if (isDemoLogin || isSimpleLocalLogin) {
+    if (isPublicLogin || isOwnerLogin) {
       localStorage.setItem("isLoggedIn", "true");
       if (document.getElementById("remember").checked) {
         localStorage.setItem("rememberPortfolioLogin", "true");
       } else {
         localStorage.removeItem("rememberPortfolioLogin");
       }
-      message.textContent = "Login berhasil. Mengalihkan ke portfolio...";
+      message.textContent = "Login berhasil. Mengalihkan ke portofolio...";
       message.className = "message success";
       window.setTimeout(() => { window.location.href = "index.html"; }, 550);
     } else {
-      message.textContent = "Login demo tidak cocok. Gunakan mode demo atau periksa kembali data.";
+      message.textContent = "Username atau password salah. Periksa kembali data login kamu.";
       message.className = "message";
     }
   });
