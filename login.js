@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mode demo: bisa masuk tanpa backend dengan mengisi kedua kolom.
   document.getElementById("demoBtn").addEventListener("click", () => {
-    usernameInput.value = "demo";
-    passwordInput.value = "demo123";
+    usernameInput.value = "mansyur";
+    passwordInput.value = "08082007";
     message.textContent = "Mode demo terisi. Klik tombol Masuk untuk melanjutkan.";
     message.className = "message success";
     passwordInput.focus();
